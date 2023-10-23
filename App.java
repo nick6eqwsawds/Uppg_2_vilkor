@@ -1,7 +1,11 @@
 package Uppg_2_vilkor;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args)throws Exception{
+        Scanner tangentbord = new Scanner(System.in);
+
         int litetTal=10;
         int stortTal=0;
         int tal1 = 10;
@@ -21,6 +25,19 @@ public class App {
             System.out.println(tal2+" är större än "+tal1);
         } else {
             System.out.println(tal2+" är mindre än "+tal1);
+        }
+
+        System.out.println("Vad är klockan?: ");
+        int tid = tangentbord.nextInt();
+
+        if(tid<7){
+            System.out.println("Du borde värkligen gå och lägga dig");
+        } else if (tid>=7&&tid<=8){
+            System.out.println("dags att gå upp");
+        } else if (tid==12){
+            System.out.println("Dags att äta");
+        } else if (tid>=23){
+            System.out.println("Dags att gå och lägga sig");
         }
     }
     
