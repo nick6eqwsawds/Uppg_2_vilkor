@@ -39,6 +39,14 @@ public class App {
         } else if (tid>=23){
             System.out.println("Dags att gå och lägga sig");
         }
+
+        System.out.println("Skriv in din ålder: ");
+        int ålder = tangentbord.nextInt();
+        if(ålder >=18){
+            System.out.println("Du får komma in i klubben");
+        } else if (ålder<18){
+            System.out.println("Du får inte komma in i klubben");
+        }
     }
     
 }
