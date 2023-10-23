@@ -5,7 +5,7 @@ public class App {
         int litetTal=10;
         int stortTal=0;
         int tal1 = 10;
-        int tal2 = 20;
+        int tal2 = 0;
 
         if(litetTal<1000){
             stortTal+=1000;
@@ -19,6 +19,8 @@ public class App {
 
         if(tal2>tal1){
             System.out.println(tal2+" är större än "+tal1);
+        } else {
+            System.out.println(tal2+" är mindre än "+tal1);
         }
     }
     
