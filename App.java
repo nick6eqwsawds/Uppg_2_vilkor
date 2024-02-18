@@ -47,6 +47,25 @@ public class App {
         } else if (ålder<18){
             System.out.println("Du får inte komma in i klubben");
         }
+
+        System.out.println("Skriv in användarnamn: ");
+        String namn = tangentbord.nextLine();
+        System.out.println("Skriv in lösenordet: ");
+        String lösen = tangentbord.nextLine();
+        int point = 0;
+
+        if(namn.equalsIgnoreCase("root")){
+            point=1;
+            System.out.println("Skriv in lösenordet:");
+        } 
+        if(lösen.equalsIgnoreCase("passwd")){
+            point=point+1;
+            System.out.println(point);
+        }
+        System.out.println(point);
+        if(point==2){
+            System.out.println("Du är inloggad!");
+        }
     }
     
 }
